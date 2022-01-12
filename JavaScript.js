@@ -9,13 +9,8 @@ timeColours();
 function timeColours() {
   let hourTime = moment().hours();
 
-  //   console.log("hourTime = " + hourTime);
-
   $(".time-block").each(function () {
     let pastPresentFuture = parseInt($(this).attr("id"));
-
-    console.log("pastPresentFuture1 = " + pastPresentFuture);
-    // console.log("hourTime = " + hourTime);
 
     if (pastPresentFuture < hourTime) {
       $(this).removeClass("future");
@@ -32,3 +27,13 @@ function timeColours() {
     }
   });
 }
+
+//Save to local storage
+
+let saveData = $("#aaa").val();
+
+console.log(saveData);
+
+$(".saveBtn").on("click", function () {
+  localStorage.setItem("9am", saveData);
+});
