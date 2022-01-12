@@ -12,23 +12,23 @@ function timeColours() {
   //   console.log("hourTime = " + hourTime);
 
   $(".time-block").each(function () {
-    let pastPresentFuture = parseInt($(".time-block").attr("id"));
+    let pastPresentFuture = parseInt($(this).attr("id"));
 
-  console.log("pastPresentFuture1 = " + pastPresentFuture);
+    console.log("pastPresentFuture1 = " + pastPresentFuture);
     // console.log("hourTime = " + hourTime);
 
     if (pastPresentFuture < hourTime) {
-      $(".time-block").removeClass("future");
-      $(".time-block").removeClass("present");
-      $(".time-block").addClass("past");
+      $(this).removeClass("future");
+      $(this).removeClass("present");
+      $(this).addClass("past");
     } else if (pastPresentFuture === hourTime) {
-      $(".time-block").removeClass("future");
-      $(".time-block").addClass("present");
-      $(".time-block").removeClass("past");
+      $(this).removeClass("future");
+      $(this).addClass("present");
+      $(this).removeClass("past");
     } else {
-      $(".time-block").addClass("future");
-      $(".time-block").removeClass("present");
-      $(".time-block").removeClass("past");
+      $(this).addClass("future");
+      $(this).removeClass("present");
+      $(this).removeClass("past");
     }
   });
 }
