@@ -36,7 +36,7 @@ The use of the APIs made this homework so much easier than past homeworks as I f
 
 ## Screenshot of Deployed Application
 
-![ScreenShot](/screenshot.png)
+![ScreenShot](screenshot.png)
 
 ### Link:
 
