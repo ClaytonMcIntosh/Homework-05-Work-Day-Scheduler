@@ -1,4 +1,4 @@
-# Homework-05-Work-Day-Scheduler
+# Work Day Scheduler
 
 ## Task
 
